@@ -112,7 +112,7 @@
                     <input type="text" asp-for="PhoneNumber" />
                     <span class="form-field-validation" asp-validation-for="PhoneNumber"></span>
                 </div>
-
+                <hr />
                 <div class="form-field">
                     <label asp-for="ProfileImage"></label>
                     <div class="file-input-wrapper">
@@ -121,7 +121,7 @@
                         </span>
 
                         <input asp-for="ProfileImage" type="file" hidden onchange="updateFileName(this)" />
-
+                
                         <button type="button" onclick="document.getElementById('ProfileImage').click()">
                             Browse
                         </button>
